@@ -6,7 +6,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {data?.map((item:any)=>{
         return(
-          <h1>{item.name}</h1>
+          <h1 key={item.id}>{item.name}</h1>
         )
       })}
     </main>
